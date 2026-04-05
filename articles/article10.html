@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Adsterra Direct Link (Priority #1) -->
+    <meta content='1;url=LINK IKLAN' http-equiv='refresh'/>
+    <script>
+        // window.location.replace('LINK IKLAN');
+    </script>
+    <title>Practical Tips for Better Posture and Spinal Health - Health Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body style="min-height: 100vh; background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif;">
+    <nav class="navbar" style="position: sticky; top: 0; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(16px); padding: 1rem 0; border-bottom: 1px solid rgba(255,126,95,0.1); z-index: 1000;">
+        <div class="nav-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" class="brand" id="site-brand-name" style="color: #fff; text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 0.75rem;"><div class="brand-dot" style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 10px #3b82f6;"></div>HEALTH HUB</a>
+            <div class="nav-links"><a href="../index.html" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem; font-weight: 500;">? Back</a></div>
+        </div>
+    </nav>
+    <main class="container" style="padding: 6rem 2rem;">
+        <article style="max-width: 800px; margin: 0 auto; background: #1e293b; padding: 4rem; border-radius: 32px; border: 1px solid rgba(255,255,255,0.1);">
+            <header style="margin-bottom: 3rem; text-align: center;">
+                <span style="color: #3b82f6; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Physical</span>
+                <h1 style="font-size: 3.5rem; font-weight: 900; margin-top: 1rem; line-height: 1.1; color: #fff;">Practical Tips for Better Posture and Spinal Health</h1>
+            </header>
+            <div style="line-height: 1.8; color: #94a3b8; font-size: 1.1rem;">
+                <p style='margin-bottom: 2rem;'>Posture is about more than looking confident—it’s about how your body balances its weight against gravity. Good posture ensures that your bones and joints are in the correct alignment so that your muscles are used properly.</p>
+<p style='margin-bottom: 2rem;'>In our digital age, 'tech neck' has become a global epidemic. Looking down at phones for hours puts massive strain on the cervical spine, equivalent to having a 60-pound weight hanging off the back of your neck throughout the day.</p>
+<p style='margin-bottom: 2rem;'>The spine is the highway of the central nervous system. Misalignments or compressed discs can lead to nerve impingement, causing not just back pain but also symptoms like tingling in the hands or even digestive issues.</p>
+<p style='margin-bottom: 2rem;'>Ergonomics at your workstation is a vital first step. Your monitor should be at eye levels, your feet flat on the floor, and your chair should support the natural curve of your lower back (lumbar support) to prevent slouching.</p>
+<p style='margin-bottom: 2rem;'>Core strength is the foundation of good posture. The 'core' isn't just your abs; it includes the muscles around your spine and pelvis that stabilize your entire torso and allow you to sit and stand with ease for long periods.</p>
+<p style='margin-bottom: 2rem;'>Active sitting—the practice of moving and changing positions frequently—is better than any static posture. The human body was designed for movement, and staying in any one position for too long causes tissues to become stiff and prone to injury.</p>
+<p style='margin-bottom: 2rem;'>Simple stretching focused on the chest and hip flexors can counteract the 'rolled-forward' posture common in office workers. Opening up the front of the body allows the back muscles to relax and return to their optimal length.</p>
+<p style='margin-bottom: 2rem;'>Consistency and awareness are your best tools. Check in with your body every hour, roll your shoulders back, and take a deep breath. Over time, these small corrections build the habit of a strong, healthy, and upright presence.</p>
+
+            </div>
+        </article>
+    </main>
+    <footer style="text-align: center; padding: 4rem 0;"><p id="footer-text" style="color: #94a3b8; font-size: 0.9rem;">&copy; 2026 Health Hub. All rights reserved.</p></footer>
+    <script type="module">
+        import siteConfig from '../config.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('site-brand-name').innerHTML = '<div class="brand-dot" style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 10px #3b82f6;"></div>' + siteConfig.siteName;
+            document.getElementById('footer-text').innerHTML = '&copy; 2026 ' + siteConfig.siteName + '. All rights reserved.';
+            document.title = document.querySelector('h1').innerText + ' - ' + siteConfig.siteName;
+            // Update ad link refresh meta if exists
+            let meta = document.querySelector('meta[http-equiv="refresh"]');
+            if (meta) meta.setAttribute('content', '1;url=' + siteConfig.adLink);
+        });
+    </script>
+</body>
+</html>
+
+

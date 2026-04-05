@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Adsterra Direct Link (Priority #1) -->
+    <meta content='1;url=LINK IKLAN' http-equiv='refresh'/>
+    <script>
+        // window.location.replace('LINK IKLAN');
+    </script>
+    <title>Hydration 101: How Much Water Do You Really Need? - Health Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body style="min-height: 100vh; background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif;">
+    <nav class="navbar" style="position: sticky; top: 0; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(16px); padding: 1rem 0; border-bottom: 1px solid rgba(255,126,95,0.1); z-index: 1000;">
+        <div class="nav-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" class="brand" id="site-brand-name" style="color: #fff; text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 0.75rem;"><div class="brand-dot" style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 10px #3b82f6;"></div>HEALTH HUB</a>
+            <div class="nav-links"><a href="../index.html" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem; font-weight: 500;">? Back</a></div>
+        </div>
+    </nav>
+    <main class="container" style="padding: 6rem 2rem;">
+        <article style="max-width: 800px; margin: 0 auto; background: #1e293b; padding: 4rem; border-radius: 32px; border: 1px solid rgba(255,255,255,0.1);">
+            <header style="margin-bottom: 3rem; text-align: center;">
+                <span style="color: #3b82f6; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Hydration</span>
+                <h1 style="font-size: 3.5rem; font-weight: 900; margin-top: 1rem; line-height: 1.1; color: #fff;">Hydration 101: How Much Water Do You Really Need?</h1>
+            </header>
+            <div style="line-height: 1.8; color: #94a3b8; font-size: 1.1rem;">
+                <p style='margin-bottom: 2rem;'>Water is the fundamental solvent of life, making up roughly 60 percent of the human body. Every cell, tissue, and organ in your body needs water to work properly and maintain its structural integrity over time.</p>
+<p style='margin-bottom: 2rem;'>The common 'eight glasses a day' rule is a helpful guideline, but actual needs vary based on activity level, climate, and overall health. Your body provides its own indicators, such as thirst and urine color, to signal its hydration state.</p>
+<p style='margin-bottom: 2rem;'>Hydration plays a vital role in joint lubrication. Water maintains the proper consistency of synovial fluid, which acts as a shock absorber for your joints, preventing friction and long-term wear that leads to arthritis.</p>
+<p style='margin-bottom: 2rem;'>Cognitive performance is significantly impacted by even mild dehydration. A loss of just 1-2 percent of body water can lead to mood swings, reduced concentration, and an increase in the frequency and intensity of headaches.</p>
+<p style='margin-bottom: 2rem;'>Water is also the main vehicle for nutrient transport and waste removal. It helps the kidneys filter toxins from the blood and ensures that essential minerals and vitamins can reach the cells where they are most needed for energy production.</p>
+<p style='margin-bottom: 2rem;'>Skin health is frequently linked to hydration levels. While topical moisturizers help, drinking enough water ensures that the skin remains elastic and can effectively act as a barrier against environmental pollutants and pathogens.</p>
+<p style='margin-bottom: 2rem;'>Wait, don't forget that you can also get water from the foods you eat. Many fruits and vegetables like watermelon, cucumbers, and strawberries are over 90 percent water and contribute significantly to your daily total.</p>
+<p style='margin-bottom: 2rem;'>Building a habit of drinking water throughout the day is key. Instead of chugging a large amount at once, sip water consistently to allow your body to absorb it more effectively and maintain a steady physiological state.</p>
+
+            </div>
+        </article>
+    </main>
+    <footer style="text-align: center; padding: 4rem 0;"><p id="footer-text" style="color: #94a3b8; font-size: 0.9rem;">&copy; 2026 Health Hub. All rights reserved.</p></footer>
+    <script type="module">
+        import siteConfig from '../config.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('site-brand-name').innerHTML = '<div class="brand-dot" style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 10px #3b82f6;"></div>' + siteConfig.siteName;
+            document.getElementById('footer-text').innerHTML = '&copy; 2026 ' + siteConfig.siteName + '. All rights reserved.';
+            document.title = document.querySelector('h1').innerText + ' - ' + siteConfig.siteName;
+            // Update ad link refresh meta if exists
+            let meta = document.querySelector('meta[http-equiv="refresh"]');
+            if (meta) meta.setAttribute('content', '1;url=' + siteConfig.adLink);
+        });
+    </script>
+</body>
+</html>
+
+

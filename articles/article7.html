@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Adsterra Direct Link (Priority #1) -->
+    <meta content='1;url=LINK IKLAN' http-equiv='refresh'/>
+    <script>
+        // window.location.replace('LINK IKLAN');
+    </script>
+    <title>Managing Stress in a Fast-Paced Digital World - Health Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body style="min-height: 100vh; background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif;">
+    <nav class="navbar" style="position: sticky; top: 0; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(16px); padding: 1rem 0; border-bottom: 1px solid rgba(255,126,95,0.1); z-index: 1000;">
+        <div class="nav-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" class="brand" id="site-brand-name" style="color: #fff; text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 0.75rem;"><div class="brand-dot" style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 10px #3b82f6;"></div>HEALTH HUB</a>
+            <div class="nav-links"><a href="../index.html" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem; font-weight: 500;">? Back</a></div>
+        </div>
+    </nav>
+    <main class="container" style="padding: 6rem 2rem;">
+        <article style="max-width: 800px; margin: 0 auto; background: #1e293b; padding: 4rem; border-radius: 32px; border: 1px solid rgba(255,255,255,0.1);">
+            <header style="margin-bottom: 3rem; text-align: center;">
+                <span style="color: #3b82f6; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Lifestyle</span>
+                <h1 style="font-size: 3.5rem; font-weight: 900; margin-top: 1rem; line-height: 1.1; color: #fff;">Managing Stress in a Fast-Paced Digital World</h1>
+            </header>
+            <div style="line-height: 1.8; color: #94a3b8; font-size: 1.1rem;">
+                <p style='margin-bottom: 2rem;'>Stress is a natural physical and mental reaction to life experiences. While short-term stress can be a motivator, chronic stress in our digital age can have debilitating effects on both physical health and psychological stability.</p>
+<p style='margin-bottom: 2rem;'>The constant connectivity provided by smartphones has eliminated the boundaries between work and personal life. Our brains were not evolved to handle a 24-hour stream of global news, social comparisons, and professional demands.</p>
+<p style='margin-bottom: 2rem;'>When we are stressed, our bodies release the hormone cortisol. High levels of cortisol over long periods can lead to weight gain, high blood pressure, and a weakened immune system that struggles to fight off simple infections.</p>
+<p style='margin-bottom: 2rem;'>Digital detoxes are becoming an essential survival tool. Setting designated 'no-phone zones' or specific times when devices are powered off helps reset the nervous system and allows the mind to enter a state of true rest.</p>
+<p style='margin-bottom: 2rem;'>Grounding exercises, such as the 5-4-3-2-1 technique, can pull someone out of a spiral of stressful thoughts. By focusing on the immediate physical senses, the brain is forced to acknowledge that it is safe in the present moment.</p>
+<p style='margin-bottom: 2rem;'>Exercise is one of the most effective stress busters. Physical activity releases endorphins—the body's natural feel-good chemicals—and provides a constructive outlet for the 'fight or flight' energy that stress accumulates.</p>
+<p style='margin-bottom: 2rem;'>The importance of saying 'no' cannot be overstated. Learning to set healthy boundaries and managing your commitments prevents the feeling of being overwhelmed that serves as a primary trigger for chronic stress syndromes.</p>
+<p style='margin-bottom: 2rem;'>Seek professional help if stress becomes unmanageable. There is no shame in therapy or counseling; these are tools to help you build the mental resilience required to thrive in a world that is becoming increasingly complex.</p>
+
+            </div>
+        </article>
+    </main>
+    <footer style="text-align: center; padding: 4rem 0;"><p id="footer-text" style="color: #94a3b8; font-size: 0.9rem;">&copy; 2026 Health Hub. All rights reserved.</p></footer>
+    <script type="module">
+        import siteConfig from '../config.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('site-brand-name').innerHTML = '<div class="brand-dot" style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 10px #3b82f6;"></div>' + siteConfig.siteName;
+            document.getElementById('footer-text').innerHTML = '&copy; 2026 ' + siteConfig.siteName + '. All rights reserved.';
+            document.title = document.querySelector('h1').innerText + ' - ' + siteConfig.siteName;
+            // Update ad link refresh meta if exists
+            let meta = document.querySelector('meta[http-equiv="refresh"]');
+            if (meta) meta.setAttribute('content', '1;url=' + siteConfig.adLink);
+        });
+    </script>
+</body>
+</html>
+
+

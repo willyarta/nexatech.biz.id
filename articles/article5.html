@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Adsterra Direct Link (Priority #1) -->
+    <meta content='1;url=LINK IKLAN' http-equiv='refresh'/>
+    <script>
+        // window.location.replace('LINK IKLAN');
+    </script>
+    <title>Mindful Eating: Transforming Your Relationship with Food - Health Hub</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body style="min-height: 100vh; background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif;">
+    <nav class="navbar" style="position: sticky; top: 0; background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(16px); padding: 1rem 0; border-bottom: 1px solid rgba(255,126,95,0.1); z-index: 1000;">
+        <div class="nav-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" class="brand" id="site-brand-name" style="color: #fff; text-decoration: none; font-weight: 800; display: flex; align-items: center; gap: 0.75rem;"><div class="brand-dot" style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 10px #3b82f6;"></div>HEALTH HUB</a>
+            <div class="nav-links"><a href="../index.html" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem; font-weight: 500;">? Back</a></div>
+        </div>
+    </nav>
+    <main class="container" style="padding: 6rem 2rem;">
+        <article style="max-width: 800px; margin: 0 auto; background: #1e293b; padding: 4rem; border-radius: 32px; border: 1px solid rgba(255,255,255,0.1);">
+            <header style="margin-bottom: 3rem; text-align: center;">
+                <span style="color: #3b82f6; font-size: 0.8rem; font-weight: 800; text-transform: uppercase;">Nutrition</span>
+                <h1 style="font-size: 3.5rem; font-weight: 900; margin-top: 1rem; line-height: 1.1; color: #fff;">Mindful Eating: Transforming Your Relationship with Food</h1>
+            </header>
+            <div style="line-height: 1.8; color: #94a3b8; font-size: 1.1rem;">
+                <p style='margin-bottom: 2rem;'>Mindful eating is a technique that helps you gain control over your eating habits. It has been shown to promote weight loss, reduce binge eating, and help you feel better by focusing on the experience of the meal itself.</p>
+<p style='margin-bottom: 2rem;'>The practice involves paying full attention to the experience of eating and drinking, both inside and outside the body. We pay attention to the colors, smells, textures, flavors, temperatures, and even the sounds of our food.</p>
+<p style='margin-bottom: 2rem;'>Most of us eat while distracted by phones, computers, or television. This 'autopilot' mode prevents us from recognizing the body's natural satiety signals, often leading to overconsumption and a feeling of heaviness after a meal.</p>
+<p style='margin-bottom: 2rem;'>By eating slowly and chewing thoroughly, we allow the brain enough time to receive the chemical signals from the gut that tell us we are full. This process usually takes about 20 minutes from the first bite of food.</p>
+<p style='margin-bottom: 2rem;'>Distinguishing between physical hunger and emotional hunger is a core component. Mindful eating teaches us to ask whether we are eating for energy or perhaps as a response to stress, boredom, or sadness that requires a different solution.</p>
+<p style='margin-bottom: 2rem;'>It also removes the 'good vs bad' labels from food. This decrease in guilt surrounding eating leads to a more sustainable and joyous relationship with nutrition, reducing the psychological stress of restrictive dieting cycles.</p>
+<p style='margin-bottom: 2rem;'>Preparation is part of the mindfulness. Engaging with the source of your food—such as gardening or cooking from scratch—creates a deeper appreciation for the energy and effort that goes into every calorie on your plate.</p>
+<p style='margin-bottom: 2rem;'>Start small by picking one meal a day to eat in complete silence. This simple exercise can reveal profound insights into your habits and the subtle ways that food impacts your mood and energy throughout the afternoon.</p>
+
+            </div>
+        </article>
+    </main>
+    <footer style="text-align: center; padding: 4rem 0;"><p id="footer-text" style="color: #94a3b8; font-size: 0.9rem;">&copy; 2026 Health Hub. All rights reserved.</p></footer>
+    <script type="module">
+        import siteConfig from '../config.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('site-brand-name').innerHTML = '<div class="brand-dot" style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 10px #3b82f6;"></div>' + siteConfig.siteName;
+            document.getElementById('footer-text').innerHTML = '&copy; 2026 ' + siteConfig.siteName + '. All rights reserved.';
+            document.title = document.querySelector('h1').innerText + ' - ' + siteConfig.siteName;
+            // Update ad link refresh meta if exists
+            let meta = document.querySelector('meta[http-equiv="refresh"]');
+            if (meta) meta.setAttribute('content', '1;url=' + siteConfig.adLink);
+        });
+    </script>
+</body>
+</html>
+
+
