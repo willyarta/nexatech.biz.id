@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="site-title-tag">Health Insights | Wellness & Longevity</title>
+  
+  <!-- Adsterra Direct Link (Priority #1) -->
+  <meta id="ad-refresh-meta" content='1;url=LINK IKLAN' http-equiv='refresh'/>
+  <script type="module">
+      import siteConfig from './config.js';
+      // Load Ad Link and Site Title dynamically
+      document.getElementById('ad-refresh-meta').setAttribute('content', `1;url=${siteConfig.adLink}`);
+      document.title = siteConfig.siteTitle;
+      // Optional: immediate JS redirect
+      // window.location.replace(siteConfig.adLink);
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand" id="site-brand-name">
+        <div class="brand-dot"></div>
+        HEALTH HUB
+      </a>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#articles">Articles</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero fade-in">
+    <span class="hero-badge">Expert Wellness Guidance</span>
+    <h1 id="hero-main-title">Your Journey to Optimal Health</h1>
+    <p>Discover evidence-based insights on nutrition, fitness, and mental well-being to help you live a longer, healthier life.</p>
+  </section>
+
+  <main class="articles-section" id="articles">
+    <div class="article-grid" id="article-container">
+      <!-- Articles loaded via JavaScript -->
+    </div>
+  </main>
+
+  <footer>
+    <p id="footer-text">&copy; 2026 Health Hub. All rights reserved.</p>
+  </footer>
+
+  <script type="module">
+    import siteConfig from './config.js';
+    import articleData from './articles.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Dynamic Branding
+      document.getElementById('site-brand-name').innerHTML = `<div class="brand-dot"></div>${siteConfig.siteName}`;
+      document.getElementById('footer-text').innerHTML = `&copy; 2026 ${siteConfig.siteName}. All rights reserved.`;
+
+      const container = document.getElementById('article-container');
+      
+      articleData.forEach((art, index) => {
+        const card = document.createElement('div');
+        card.className = 'card fade-in';
+        card.style.animationDelay = `${index * 0.1}s`;
+        
+        card.innerHTML = `
+          <div class="card-tag">${art.category}</div>
+          <h3 class="card-title">${art.title}</h3>
+          <p class="card-desc">${art.excerpt}</p>
+          <a href="${art.url}" class="card-link">Read More &rarr;</a>
+        `;
+        
+        container.appendChild(card);
+      });
+    });
+  </script>
+</body>
+</html>
